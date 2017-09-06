@@ -101,14 +101,29 @@
   <!--[if IE 9]>
   <link rel="stylesheet" href="/public/css/ie9.css"/>
   <![endif]-->
-
+  <link href="styles.css" rel="stylesheet"/></head>
 </head>
 <body onunload="">
 <div id="wrap">
   <ng-include src="'/public/pages/header.html'"></ng-include>
   <ng-include src="'/public/pages/navigation.html'"></ng-include>
-  <iframe src="http://localhost:4200" height="800px" width="100%"></iframe>
+  <app-root>
+    <div class="text-center">
+      <img src="assets/img/balls-5.svg" style="margin-top: 3%; height: 300px; width: 200px"><br>
+      <span class="glyphicon glyphicon-th" style="height: 60px; width: 48px"></span>
+      <h3>Getting ready, Please wait</h3>
+    </div>
+  </app-root>
+  <script type="text/javascript" src="inline.js"></script>
+  <script type="text/javascript" src="polyfills.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="vendor.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </div>
-
 </body>
+
+
+</div>
+</body>
+
 </html>
